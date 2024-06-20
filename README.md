@@ -35,24 +35,26 @@ AI4I 2020 Predictive Maintenance Dataset. (2020). UCI Machine Learning Repositor
 
 ## Project Structure
 Failure_prediction_ML/
+
+```plaintext
+Failure_prediction_ML/
 ├── data/
-│ ├── ai4i2020.csv # Raw dataset
+│   ├── ai4i2020.csv            # Raw dataset
 ├── notebooks/
-│ ├── data_preprocessing.ipynb # Data preprocessing and EDA
-│ ├── feature_engineering.ipynb # Feature engineering
-│ ├── model_training.ipynb # Model training and tuning
-│ ├── model_evaluation.ipynb # Model evaluation
+│   ├── data_preprocessing.ipynb  # Data preprocessing and EDA
+│   ├── feature_engineering.ipynb # Feature engineering
+│   ├── model_training.ipynb      # Model training and tuning
+│   ├── model_evaluation.ipynb    # Model evaluation
 ├── scripts/
-│ ├── preprocess.py # Data preprocessing script
-│ ├── train.py # Model training script
-│ ├── evaluate.py # Model evaluation script
+│   ├── preprocess.py            # Data preprocessing script
+│   ├── train.py                 # Model training script
+│   ├── evaluate.py              # Model evaluation script
 ├── models/
-│ ├── model.pkl # Trained model
+│   ├── model.pkl                # Trained model
 ├── results/
-│ ├── evaluation_metrics.csv # Evaluation metrics
-│ ├── confusion_matrix.png # Confusion matrix
-├── requirements.txt # Python dependencies
-├── README.md # Project README
+│   ├── evaluation_metrics.csv   # Evaluation metrics
+│   ├── confusion_matrix.png     # Confusion matrix
+├── README.md                    # Project README
 
 ## Usage
 
