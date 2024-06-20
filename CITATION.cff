@@ -1,0 +1,12 @@
+```yaml
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Duran Villalobos"
+    given-names: "Carlos Alberto"
+title: "Failure_prediction_ML"
+version: "1.0.0"
+date-released: "2024-06-20"
+url: "https://github.com/yourusername/Failure_prediction_ML"
+repository-code: "https://github.com/yourusername/Failure_prediction_ML"
+license: "MIT"
