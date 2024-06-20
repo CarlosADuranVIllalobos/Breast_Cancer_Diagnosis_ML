@@ -29,7 +29,7 @@ The AI4I 2020 Predictive Maintenance Dataset is sourced from the UCI Machine Lea
 
 Additional failure modes include tool wear failure (TWF), heat dissipation failure (HDF), power failure (PWF), overstrain failure (OSF), and random failures (RNF).
 
-### Citation
+### Citation of the Dataset
 
 AI4I 2020 Predictive Maintenance Dataset. (2020). UCI Machine Learning Repository. https://doi.org/10.24432/C5HS5C.
 
