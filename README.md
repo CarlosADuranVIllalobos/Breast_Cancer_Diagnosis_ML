@@ -105,3 +105,13 @@ Contributions are welcome! Please create an issue or submit a pull request for a
 ## License
 
 This project is licensed under the MIT License.
+
+If you use this repository in your research, please cite it as follows:
+@software{Duran_Villalobos_Failure_prediction_ML_2024,
+  author = {Carlos Alberto Duran Villalobos},
+  title = {Failure_prediction_ML},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  url = {https://github.com/CarlosADuranVIllalobos/Failure_prediction_ML}
+}
