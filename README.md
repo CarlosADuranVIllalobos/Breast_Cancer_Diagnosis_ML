@@ -79,10 +79,11 @@ python scripts/evaluate.py
 
 The project explores various machine learning models, including:
 
-- Random Forest
-- Gradient Boosting
-- Support Vector Machines
-- Neural Networks
+- Random Forest (RF)
+- Gradient Boosting (GB)
+- Partial Least Squares (PLS)
+- Gaussian Process Regression (GPR)
+- Neural Networks (NN)
 
 The models are evaluated using cross-validation and tuned for optimal performance.
 
