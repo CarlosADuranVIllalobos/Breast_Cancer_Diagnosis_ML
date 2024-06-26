@@ -42,7 +42,7 @@ Failure_prediction_ML/
 │   ├── ai4i2020.csv            # Raw dataset
 ├── notebooks/
 │   ├── data_preprocessing.ipynb  # Data preprocessing and EDA
-│   ├── feature_engineering.ipynb # Feature engineering
+│   ├── feature_selection.ipynb # Feature engineering
 │   ├── model_training.ipynb      # Model training and tuning
 │   ├── model_evaluation.ipynb    # Model evaluation
 ├── scripts/
