@@ -16,16 +16,16 @@ def load_preprocessed_data(filepath):
     y_test = data['y_test']
     return X_train, X_test, y_train, y_test
 
-def train_model(model, X_train, y_train):
-    """Train the machine learning model."""
-    model.fit(X_train, y_train)
-    return model
-
 def tune_model(model, param_grid, X_train, y_train):
     """Tune hyperparameters using GridSearchCV."""
     grid_search = GridSearchCV(model, param_grid, cv=5, scoring='accuracy', n_jobs=-1)
     grid_search.fit(X_train, y_train)
     return grid_search.best_estimator_
+
+def train_model(model, X_train, y_train):
+    """Train the machine learning model."""
+    model.fit(X_train, y_train)
+    return model
 
 def evaluate_model(model, X_test, y_test):
     """Evaluate the trained model."""
@@ -44,11 +44,8 @@ def save_model(model, filepath):
     """Save the trained model to a file."""
     joblib.dump(model, filepath)
 
-if __name__ == "__main__":
-    # Load preprocessed data
-    X_train, X_test, y_train, y_test = load_preprocessed_data('../data/selected_features_data.npz')
-    
-    # Define models and hyperparameter grids
+def get_models_and_params():
+    """Define models and hyperparameter grids."""
     models = {
         'Random Forest': RandomForestClassifier(random_state=42),
         'Gradient Boosting': GradientBoostingClassifier(random_state=42),
@@ -76,8 +73,11 @@ if __name__ == "__main__":
             'alpha': [0.0001, 0.001, 0.01]
         }
     }
-    
-    # Train, tune, and evaluate models
+    return models, param_grids
+
+def train_and_evaluate_models(X_train, X_test, y_train, y_test):
+    """Train, tune, and evaluate models."""
+    models, param_grids = get_models_and_params()
     results = {}
     for name, model in models.items():
         print(f"Tuning {name}...")
@@ -87,6 +87,14 @@ if __name__ == "__main__":
         metrics = evaluate_model(trained_model, X_test, y_test)
         results[name] = metrics
         save_model(trained_model, f'../models/{name.lower().replace(" ", "_")}_model.pkl')
+    return results
+
+if __name__ == "__main__":
+    # Load preprocessed data
+    X_train, X_test, y_train, y_test = load_preprocessed_data('../data/selected_features_data.npz')
+    
+    # Train, tune, and evaluate models
+    results = train_and_evaluate_models(X_train, X_test, y_train, y_test)
     
     # Save evaluation metrics
     results_df = pd.DataFrame(results).T
