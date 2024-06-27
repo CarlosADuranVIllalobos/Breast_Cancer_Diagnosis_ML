@@ -80,7 +80,6 @@ The project explores various machine learning models, including:
 - Random Forest (RF)
 - Gradient Boosting (GB)
 - Partial Least Squares (PLS)
-- Gaussian Process Regression (GPR)
 - Neural Networks (NN)
 
 The models are evaluated using cross-validation and tuned for optimal performance.
