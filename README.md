@@ -47,6 +47,7 @@ Failure_prediction_ML/
 │   ├── model_evaluation.ipynb    # Model evaluation
 ├── scripts/
 │   ├── preprocess.py            # Data preprocessing script
+│   ├── features.py             # Feature selection script
 │   ├── train.py                 # Model training script
 │   ├── evaluate.py              # Model evaluation script
 ├── models/
@@ -71,10 +72,7 @@ Failure_prediction_ML/
 4. **Model Evaluation**:
    - Evaluate the performance of the trained models using the `model_evaluation.ipynb` notebook.
 
-To run the scripts from the command line:
-python scripts/preprocess.py
-python scripts/train.py
-python scripts/evaluate.py
+
 ## Modeling
 
 The project explores various machine learning models, including:
