@@ -1,4 +1,4 @@
-# Failure_prediction_ML
+## Breast_Cancer_Diagnosis_ML
 ![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 ![Python](https://img.shields.io/badge/python-3.7%2B-brightgreen.svg)
 
