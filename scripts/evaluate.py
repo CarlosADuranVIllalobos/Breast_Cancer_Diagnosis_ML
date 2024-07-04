@@ -115,7 +115,7 @@ def plot_roc_curves(models, X_test, y_test, metrics):
         
         fpr, tpr, _ = roc_curve(y_test, y_pred_proba)
         auc_value = metrics.loc[name, 'roc_auc']
-        plt.plot(fpr, tpr, label=f'{name} (AUC = {auc_value:.2f})')
+        plt.plot(fpr, tpr, label=f'{name} (AUC = {auc_value:.4f})')
     
     plt.plot([0, 1], [0, 1], 'k--')
     plt.xlabel('False Positive Rate')
