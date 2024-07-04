@@ -51,16 +51,19 @@ Breast_Cancer_Diagnosis_ML/
 
 1. **Data Preprocessing**:
    - Execute the `data_preprocessing.ipynb` notebook to clean and preprocess the data.
-     [Data Preprocessing Notebook](notebooks/data_preprocessing.ipynb)
+   - [Data Preprocessing Notebook](notebooks/data_preprocessing.ipynb)
 
 2. **Feature Engineering**:
    - Run the `feature_engineering.ipynb` notebook to create new features and select the most important ones.
+   - [Feature Selection Notebook](notebooks/feature_selection.ipynb)
 
 3. **Model Training**:
    - Use the `model_training.ipynb` notebook to train various machine learning models and tune hyperparameters.
+   - [Model Training Notebook](notebooks/model_training.ipynb)
 
 4. **Model Evaluation**:
    - Evaluate the performance of the trained models using the `model_evaluation.ipynb` notebook.
+   - [Model Evaluation Notebook](notebooks/model_evaluation.ipynb)
 
 
 ## Modeling
@@ -85,6 +88,37 @@ Model performance is assessed using metrics such as:
 - ROC-AUC
 
 Visualizations include confusion matrices and ROC curves.
+
+## Results
+
+### Confusion Matrices
+
+![Confusion Matrices](results/confusion_matrices.png)
+
+### ROC Curves
+
+![ROC Curves](results/roc_curves.png)
+
+### Evaluation Metrics
+
+| Model              | Accuracy | Precision | Recall  | F1 Score | ROC AUC | Confusion Matrix          |
+|--------------------|----------|-----------|---------|----------|---------|---------------------------|
+| Random Forest      | 0.964912 | 0.953488  | 0.953488| 0.953488 | 0.997707| `[[69, 2], [2, 41]]`      |
+| Gradient Boosting  | 0.947368 | 0.930233  | 0.930233| 0.930233 | 0.995414| `[[68, 3], [3, 40]]`      |
+| PLS Regression     | 0.973684 | 0.976190  | 0.953488| 0.964706 | 0.994759| `[[70, 1], [2, 41]]`      |
+| Neural Network     | 0.991228 | 1.000000  | 0.976744| 0.988235 | 0.988863| `[[71, 0], [1, 42]]`      |
+
+### Discussion and Conclusion
+
+Based on the evaluation metrics and visualizations:
+
+- The **Neural Network** model achieved the highest accuracy, precision, and F1 score, making it the best performing model in terms of overall performance.
+- **Random Forest** and **PLS Regression** also performed very well, with high accuracy and balanced precision and recall scores.
+- **Gradient Boosting** had the lowest accuracy and precision among the models, but still performed relatively well.
+- **PLS Regression** requires considerably less tuning and computing resources compared to other models, making it a suitable choice for quick and efficient predictions.
+- All models demonstrated high ROC AUC scores, indicating strong discriminative ability.
+
+The results suggest that while the Neural Network model is the most accurate, the PLS Regression model is also a viable option when computational resources and tuning efforts are limited.
 
 ## Contributing
 
