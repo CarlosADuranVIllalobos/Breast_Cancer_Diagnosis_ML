@@ -66,15 +66,15 @@ def plot_confusion_matrices(metrics):
     plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1, hspace=0.4, wspace=0.2)
     
     # Add red lines to divide the quadrants
-    line_color = 'red'
-    line_style = '-'
-    line_width = 2
+    #line_color = 'red'
+    #line_style = '-'
+    #line_width = 2
 
     # Horizontal line in the middle
-    fig.lines.extend([plt.Line2D([0.05, 0.95], [0.52, 0.52], color=line_color, transform=fig.transFigure, figure=fig, linestyle=line_style, linewidth=line_width)])
+    #fig.lines.extend([plt.Line2D([0.05, 0.95], [0.52, 0.52], color=line_color, transform=fig.transFigure, figure=fig, linestyle=line_style, linewidth=line_width)])
 
     # Vertical line in the middle
-    fig.lines.extend([plt.Line2D([0.48, 0.48], [0.05, 0.95], color=line_color, transform=fig.transFigure, figure=fig, linestyle=line_style, linewidth=line_width)])
+    #fig.lines.extend([plt.Line2D([0.48, 0.48], [0.05, 0.95], color=line_color, transform=fig.transFigure, figure=fig, linestyle=line_style, linewidth=line_width)])
 
     plt.savefig('../results/confusion_matrices.png')
     plt.show()
