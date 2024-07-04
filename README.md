@@ -7,6 +7,7 @@ This repository demonstrates how to use machine learning models to predict breas
 - [Usage](#usage)
 - [Modeling](#modeling)
 - [Evaluation](#evaluation)
+- [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
 
